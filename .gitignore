@@ -9,6 +9,7 @@ __pycache__/
 
 media/
 *.mp4
+.env
 
 
 

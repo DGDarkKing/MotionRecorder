@@ -6,4 +6,8 @@ services:
     image: motion_recorder # build: .
     volumes:
       - ./src:/usr/src/project
-      - 'DirectoryWithVideos:/usr/src/project/media'
+      - ${HostVideoDir}:/usr/src/project/media
+      - ${RenderDir}:/usr/src/project/render
+    environment:
+      - VideoNames=${VideoNames}
+      - AreaInterest=${AreaInterest}
