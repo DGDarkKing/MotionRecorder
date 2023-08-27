@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  motion_detector:
+    # My local image name
+    image: motion_recorder # build: .
+    volumes:
+      - ./src:/usr/src/project
+      - 'DirectoryWithVideos:/usr/src/project/media'
